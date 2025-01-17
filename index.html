@@ -25,7 +25,7 @@
                 <a href="#">Menu</a>
                 <a href="#">Sobre</a>
                 <a href="#">Avaliações</a>
-                <a href="#">Endereço</a>
+                <a href="#" onclick="clickendereco()">Endereço</a>
             </nav>
         </section>
     </header>
@@ -36,25 +36,34 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis ad beatae voluptates,
                 possimus nobis veniam nemo cum quia? Id, corrupti magnam? Facilis maiores aspernatur adipisci suscipit
                 et ea fuga.</p>
-            <a href="#">Pegue o seu agora</a>
+            <a href="#" class="botaoLink">Pegue o seu agora</a>
         </div>
     </section>
 
-    <section>
-        <h2>Sobre<span>Nós</span></h2>
-        <div>
-            <div>
+    <section class="containerSobrePai">
+        <h2 class="titulos">Sobre <span>Nós</span></h2>
+        <div class="containerSobre">
+            <div class="sobreImagem">
                 <img src="img/about-img.jpeg" alt="">
             </div>
 
-            <div>
+            <div class="sobreTexto">
                 <h3>O que faz nosso café especial</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam, asperiores iusto maiores tenetur vel, ipsum officia, natus in consectetur non modi? Perferendis sit odio temporibus repudiandae qui aliquam cumque.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rem nemo, repellat corporis fuga ipsum vero. Nihil quibusdam, iste ullam eos similique laborum! Dolorem iure vero necessitatibus ea in eligendi.</p>
-                <a href="Saiba Mais"></a>
+                <a href="#" class="botaoLink">Saiba Mais</a>
             </div>
         </div>
     </section>
+
+    <div class="modal">
+        <h3 class="titulos">Nosso <span>Endereço</span></h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1742526275452!2d-47.815691724739125!3d-21.185235680503503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bee2c1d24027%3A0x1a7b10a4fbfcb624!2s%C3%87ikolata%20Confeitaria!5e0!3m2!1spt-BR!2sbr!4v1737078617175!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascaraModal" onclick="clickMascara()"></div>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>

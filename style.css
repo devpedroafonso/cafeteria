@@ -105,7 +105,7 @@ header section nav a:hover {
     line-height: 1.8;
 }
 
-.containerPrincipal div a{
+.botaoLink{
     background-color: var(--mainColor);
     cursor: pointer;
     margin-top: 2rem;
@@ -117,6 +117,75 @@ header section nav a:hover {
     padding: 1rem 3rem;
 }
 
-.containerPrincipal div a:hover {
+.botaoLink:hover {
     letter-spacing: 0.1rem;
+}
+
+.titulos{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.titulos span{
+    color: var(--mainColor);
+}
+
+.containerSobre{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.sobreImagem{
+    flex: 1 1 45rem;
+}
+
+.sobreImagem img{
+    width: 100%;
+}
+
+.sobreTexto{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.sobreTexto h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.sobreTexto p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    transition: left 1s linear;
+}
+
+.mascaraModal{
+    visibility: hidden;
+    z-index: 3;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 17, 16, 0.7) 50%, rgba(10, 17, 16, 0.99) 85%);
 }
